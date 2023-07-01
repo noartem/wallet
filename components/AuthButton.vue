@@ -1,4 +1,4 @@
-<script lang=ts setup>
+<script lang="ts" setup>
 const { status, signIn, signOut } = useAuth()
 </script>
 
@@ -6,15 +6,11 @@ const { status, signIn, signOut } = useAuth()
   <n-button
     v-if="status === 'authenticated'"
     :disabled="status === 'loading'"
-    @click="signOut"
+    @click="signOut()"
   >
     Sign Out
   </n-button>
-  <n-button
-    v-else
-    type="button"
-    @click="signIn('github')"
-  >
+  <n-button v-else @click="signIn('github')">
     Sign In via GitHub
   </n-button>
 </template>

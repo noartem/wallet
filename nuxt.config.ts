@@ -1,4 +1,4 @@
-import {setAbsoluteSqliteDatabaseUrlForPrisma} from './prisma/utils'
+import { setAbsoluteSqliteDatabaseUrlForPrisma } from './prisma/utils'
 
 setAbsoluteSqliteDatabaseUrlForPrisma()
 
